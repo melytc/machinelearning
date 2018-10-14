@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     transfusion
+Instances:    748
+Attributes:   5
+              Recency (months)
+              Frequency (times)
+              Monetary (c.c. blood)
+              Time (months)
+              whether he/she donated blood in March 2007
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: FALSE
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         570               76.2032 %
+Incorrectly Classified Instances       178               23.7968 %
+Kappa statistic                          0     
+Mean absolute error                      0.3631
+Root mean squared error                  0.4258
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              748     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.496     0.236     TRUE
+                 1.000    1.000    0.762      1.000    0.865      ?        0.496     0.760     FALSE
+Weighted Avg.    0.762    0.762    ?          0.762    ?          ?        0.496     0.636     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   0 178 |   a = TRUE
+   0 570 |   b = FALSE
+

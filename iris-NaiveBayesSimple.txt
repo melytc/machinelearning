@@ -1,0 +1,94 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     iris
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes (simple)
+
+Class Iris-setosa: P(C) = 0.33333333
+
+Attribute sepallength
+Mean: 5.006     	Standard Deviation: 0.35248969
+
+Attribute sepalwidth
+Mean: 3.418     	Standard Deviation: 0.3810244 
+
+Attribute petallength
+Mean: 1.464     	Standard Deviation: 0.17351116
+
+Attribute petalwidth
+Mean: 0.244     	Standard Deviation: 0.1072095 
+
+
+
+Class Iris-versicolor: P(C) = 0.33333333
+
+Attribute sepallength
+Mean: 5.936     	Standard Deviation: 0.51617115
+
+Attribute sepalwidth
+Mean: 2.77      	Standard Deviation: 0.31379832
+
+Attribute petallength
+Mean: 4.26      	Standard Deviation: 0.46991098
+
+Attribute petalwidth
+Mean: 1.326     	Standard Deviation: 0.19775268
+
+
+
+Class Iris-virginica: P(C) = 0.33333333
+
+Attribute sepallength
+Mean: 6.588     	Standard Deviation: 0.63587959
+
+Attribute sepalwidth
+Mean: 2.974     	Standard Deviation: 0.32249664
+
+Attribute petallength
+Mean: 5.552     	Standard Deviation: 0.5518947 
+
+Attribute petalwidth
+Mean: 2.026     	Standard Deviation: 0.27465006
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         143               95.3333 %
+Incorrectly Classified Instances         7                4.6667 %
+Kappa statistic                          0.93  
+Mean absolute error                      0.0375
+Root mean squared error                  0.1541
+Relative absolute error                  8.4391 %
+Root relative squared error             32.6809 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Iris-setosa
+                 0.940    0.040    0.922      0.940    0.931      0.896    0.991     0.982     Iris-versicolor
+                 0.920    0.030    0.939      0.920    0.929      0.895    0.991     0.985     Iris-virginica
+Weighted Avg.    0.953    0.023    0.953      0.953    0.953      0.930    0.994     0.989     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 47  3 |  b = Iris-versicolor
+  0  4 46 |  c = Iris-virginica
+

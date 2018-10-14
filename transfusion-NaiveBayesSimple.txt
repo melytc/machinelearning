@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     transfusion
+Instances:    748
+Attributes:   5
+              Recency (months)
+              Frequency (times)
+              Monetary (c.c. blood)
+              Time (months)
+              whether he/she donated blood in March 2007
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes (simple)
+
+Class TRUE: P(C) = 0.23866667
+
+Attribute Recency (months)
+Mean: 5.45505618	Standard Deviation: 5.17061474
+
+Attribute Frequency (times)
+Mean: 7.79775281	Standard Deviation: 8.03689202
+
+Attribute Monetary (c.c. blood)
+Mean: 1949.43820225	Standard Deviation: 2009.22300498
+
+Attribute Time (months)
+Mean: 32.71910112	Standard Deviation: 23.62943141
+
+
+
+Class FALSE: P(C) = 0.76133333
+
+Attribute Recency (months)
+Mean: 10.77192982	Standard Deviation: 8.42503914
+
+Attribute Frequency (times)
+Mean: 4.80175439	Standard Deviation: 4.74676807
+
+Attribute Monetary (c.c. blood)
+Mean: 1200.43859649	Standard Deviation: 1186.69201749
+
+Attribute Time (months)
+Mean: 34.77017544	Standard Deviation: 24.60538802
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         564               75.4011 %
+Incorrectly Classified Instances       184               24.5989 %
+Kappa statistic                          0.1512
+Mean absolute error                      0.2905
+Root mean squared error                  0.4313
+Relative absolute error                 79.9988 %
+Root relative squared error            101.2719 %
+Total Number of Instances              748     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.191    0.070    0.459      0.191    0.270      0.172    0.701     0.409     TRUE
+                 0.930    0.809    0.786      0.930    0.852      0.172    0.701     0.877     FALSE
+Weighted Avg.    0.754    0.633    0.709      0.754    0.714      0.172    0.701     0.766     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  34 144 |   a = TRUE
+  40 530 |   b = FALSE
+

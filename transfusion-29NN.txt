@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 29 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     transfusion
+Instances:    748
+Attributes:   5
+              Recency (months)
+              Frequency (times)
+              Monetary (c.c. blood)
+              Time (months)
+              whether he/she donated blood in March 2007
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 29 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         596               79.6791 %
+Incorrectly Classified Instances       152               20.3209 %
+Kappa statistic                          0.3218
+Mean absolute error                      0.3052
+Root mean squared error                  0.392 
+Relative absolute error                 84.0637 %
+Root relative squared error             92.0551 %
+Total Number of Instances              748     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.320    0.054    0.648      0.320    0.429      0.351    0.741     0.486     TRUE
+                 0.946    0.680    0.817      0.946    0.876      0.351    0.741     0.885     FALSE
+Weighted Avg.    0.797    0.531    0.776      0.797    0.770      0.351    0.741     0.790     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  57 121 |   a = TRUE
+  31 539 |   b = FALSE
+

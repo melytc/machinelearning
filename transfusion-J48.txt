@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     transfusion-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    748
+Attributes:   5
+              Recency (months)
+              Frequency (times)
+              Monetary (c.c. blood)
+              Time (months)
+              whether he/she donated blood in March 2007
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: FALSE (748.0/178.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         567               75.8021 %
+Incorrectly Classified Instances       181               24.1979 %
+Kappa statistic                          0.015 
+Mean absolute error                      0.3596
+Root mean squared error                  0.4267
+Relative absolute error                 99.039  %
+Root relative squared error            100.2016 %
+Total Number of Instances              748     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.022    0.012    0.364      0.022    0.042      0.036    0.538     0.266     TRUE
+                 0.988    0.978    0.764      0.988    0.862      0.036    0.538     0.781     FALSE
+Weighted Avg.    0.758    0.748    0.669      0.758    0.667      0.036    0.538     0.658     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   4 174 |   a = TRUE
+   7 563 |   b = FALSE
+

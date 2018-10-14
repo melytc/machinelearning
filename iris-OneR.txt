@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     iris
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+petalwidth:
+	< 0.8	-> Iris-setosa
+	< 1.75	-> Iris-versicolor
+	>= 1.75	-> Iris-virginica
+(144/150 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         138               92      %
+Incorrectly Classified Instances        12                8      %
+Kappa statistic                          0.88  
+Mean absolute error                      0.0533
+Root mean squared error                  0.2309
+Relative absolute error                 12      %
+Root relative squared error             48.9898 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Iris-setosa
+                 0.880    0.060    0.880      0.880    0.880      0.820    0.910     0.814     Iris-versicolor
+                 0.880    0.060    0.880      0.880    0.880      0.820    0.910     0.814     Iris-virginica
+Weighted Avg.    0.920    0.040    0.920      0.920    0.920      0.880    0.940     0.876     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 44  6 |  b = Iris-versicolor
+  0  6 44 |  c = Iris-virginica
+

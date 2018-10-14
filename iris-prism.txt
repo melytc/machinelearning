@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.Prism 
+Relation:     iris-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Prism rules
+----------
+If petalwidth = '(-inf-0.34]' then Iris-setosa
+If petalwidth = '(0.34-0.58]' then Iris-setosa
+If petallength = '(1.59-2.18]' then Iris-setosa
+If petalwidth = '(1.06-1.3]' then Iris-versicolor
+If petalwidth = '(0.82-1.06]' then Iris-versicolor
+If petallength = '(3.36-3.95]' then Iris-versicolor
+If petallength = '(3.95-4.54]'
+   and petalwidth = '(1.3-1.54]' then Iris-versicolor
+If petalwidth = '(1.3-1.54]'
+   and sepalwidth = '(2.96-3.2]' then Iris-versicolor
+If petalwidth = '(1.54-1.78]'
+   and petallength = '(4.54-5.13]' then Iris-versicolor
+If petalwidth = '(1.3-1.54]'
+   and sepallength = '(6.46-6.82]' then Iris-versicolor
+If petallength = '(3.95-4.54]'
+   and sepallength = '(5.74-6.1]' then Iris-versicolor
+If petalwidth = '(1.3-1.54]'
+   and petallength = '(4.54-5.13]'
+   and sepalwidth = '(2.48-2.72]' then Iris-versicolor
+If petalwidth = '(1.3-1.54]'
+   and sepalwidth = '(2.72-2.96]'
+   and sepallength = '(5.74-6.1]' then Iris-versicolor
+If sepallength = '(5.74-6.1]'
+   and sepalwidth = '(2.96-3.2]'
+   and petallength = '(4.54-5.13]'
+   and petalwidth = '(1.78-2.02]' then Iris-versicolor
+If petallength = '(5.13-5.72]' then Iris-virginica
+If petallength = '(5.72-6.31]' then Iris-virginica
+If sepallength = '(7.54-inf)' then Iris-virginica
+If petalwidth = '(2.26-inf)' then Iris-virginica
+If petalwidth = '(1.78-2.02]'
+   and sepalwidth = '(2.48-2.72]' then Iris-virginica
+If petalwidth = '(1.78-2.02]'
+   and sepalwidth = '(2.72-2.96]' then Iris-virginica
+If petalwidth = '(1.78-2.02]'
+   and sepallength = '(6.46-6.82]' then Iris-virginica
+If petalwidth = '(1.78-2.02]'
+   and sepallength = '(5.74-6.1]'
+   and sepalwidth = '(2.96-3.2]'
+   and petallength = '(4.54-5.13]' then Iris-virginica
+If sepalwidth = '(-inf-2.24]'
+   and petallength = '(4.54-5.13]' then Iris-virginica
+If petalwidth = '(1.54-1.78]'
+   and sepallength = '(4.66-5.02]' then Iris-virginica
+If sepallength = '(6.1-6.46]'
+   and sepalwidth = '(2.72-2.96]'
+   and petallength = '(4.54-5.13]' then Iris-virginica
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         132               88      %
+Incorrectly Classified Instances         8                5.3333 %
+Kappa statistic                          0.9143
+Mean absolute error                      0.0381
+Root mean squared error                  0.1952
+Relative absolute error                  9.1837 %
+Root relative squared error             42.8571 %
+UnClassified Instances                  10                6.6667 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.011    0.980      1.000    0.990      0.984    0.985     0.967     Iris-setosa
+                 0.977    0.062    0.875      0.977    0.923      0.889    0.890     0.788     Iris-versicolor
+                 0.854    0.011    0.976      0.854    0.911      0.873    0.905     0.860     Iris-virginica
+Weighted Avg.    0.943    0.027    0.946      0.943    0.942      0.917    0.928     0.876     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 49  0  0 |  a = Iris-setosa
+  0 42  1 |  b = Iris-versicolor
+  1  6 41 |  c = Iris-virginica
+

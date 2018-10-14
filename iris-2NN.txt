@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 2 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     iris
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 2 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         142               94.6667 %
+Incorrectly Classified Instances         8                5.3333 %
+Kappa statistic                          0.92  
+Mean absolute error                      0.04  
+Root mean squared error                  0.1693
+Relative absolute error                  8.9989 %
+Root relative squared error             35.9188 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Iris-setosa
+                 0.960    0.060    0.889      0.960    0.923      0.884    0.963     0.911     Iris-versicolor
+                 0.880    0.020    0.957      0.880    0.917      0.879    0.959     0.917     Iris-virginica
+Weighted Avg.    0.947    0.027    0.948      0.947    0.947      0.921    0.974     0.942     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 48  2 |  b = Iris-versicolor
+  0  6 44 |  c = Iris-virginica
+

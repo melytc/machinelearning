@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     transfusion
+Instances:    748
+Attributes:   5
+              Recency (months)
+              Frequency (times)
+              Monetary (c.c. blood)
+              Time (months)
+              whether he/she donated blood in March 2007
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Frequency (times):
+	< 16.5	-> FALSE
+	< 22.5	-> TRUE
+	< 45.0	-> FALSE
+	>= 45.0	-> TRUE
+(575/748 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         565               75.5348 %
+Incorrectly Classified Instances       183               24.4652 %
+Kappa statistic                          0.0371
+Mean absolute error                      0.2447
+Root mean squared error                  0.4946
+Relative absolute error                 67.3811 %
+Root relative squared error            116.1512 %
+Total Number of Instances              748     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.051    0.025    0.391      0.051    0.090      0.064    0.513     0.246     TRUE
+                 0.975    0.949    0.767      0.975    0.859      0.064    0.513     0.767     FALSE
+Weighted Avg.    0.755    0.729    0.678      0.755    0.676      0.064    0.513     0.643     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   9 169 |   a = TRUE
+  14 556 |   b = FALSE
+
